@@ -42,11 +42,11 @@ L'objectif de ce wiki est de servir de **carnet de note**. Vous y trouverez des 
 
     [:octicons-arrow-right-24: Voir les projets](https://github.com/MathieuBesson){:target="_blank"}
 
--   :link:{ .lg .middle } __Liens personnels__
+-   :link:{ .lg .middle } __Mes liens__
 
     ---
 
-    Explorez mes profils et sites web personnels pour en savoir plus sur moi et mon travail.
+    Explorez mes liens pour en savoir plus.
 
     - [LinkedIn](https://www.linkedin.com/in/mathieubesson){:target="_blank"}
     - [Mon site internet](https://www.mathieu-besson.fr){:target="_blank"}
