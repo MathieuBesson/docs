@@ -12,7 +12,7 @@ Un client ne doit être forcé d'implémenter des méthodes qu'il n'utilise pas.
 - Une interface ne devrait contenir que les méthodes nécessaires aux classes qui l'implémentent.
 - Une classe implémentant une interface ne devrait être obliger d'implémenter une méthode dont elle n'a pas besoin.
 
-## ⚠️ Code qui ne respecte pas le principe d'ISP
+## ⚠️ Code qui ne suit pas le principe d'ISP
 
 Le code ci-dessous contient une interface large `Document` qui nécéssite l'implémentation de nombreuses méthodes pour les classes `TextDocument` et `PDFDocument`.
 
@@ -70,7 +70,7 @@ Les classes `TextDocument` et `PDFDocument` doivent implémenter des méthodes q
 - `TextDocument` : n'a pas besoin de la méthode `convertToPDF()`.
 - `PDFDocument` : n'a pas besoin des méthodes `save()` et `convertToPDF()`.
 
-## 🔝 Code qui suit le principe d'ISP :
+## 🔝 Code qui suit le principe d'ISP
 
 ```php
 <?php

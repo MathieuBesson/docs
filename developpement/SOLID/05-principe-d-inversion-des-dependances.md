@@ -52,7 +52,7 @@ la classe `ReportGenerator` apporte une dépendance direct avec `PDFExporter` in
 
 L'objectif est de diminuer ce couplage en replaçant la dépendance concrète par une dépendance d'abstraction. 
 
-## 🔝 Code qui suit le principe de DIP :
+## 🔝 Code qui suit le principe de DIP
 
 ```php
 <?php

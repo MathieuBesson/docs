@@ -80,7 +80,7 @@ La classe Book a 3 responsabilités :
 
 Ce code ne respect donc pas le principe de responsabilité unique, ce qui créera à terme une classe fourre-tout et incompréhensible.
 
-## 🔝 Code qui suit le principe de SRP :
+## 🔝 Code qui suit le principe de SRP
 
 Voici les trois classes séparées qui respectent le principe de responsabilité unique (SRP) :
 

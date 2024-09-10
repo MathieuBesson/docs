@@ -81,7 +81,7 @@ La classe `ElectricCar` est dérivée de `Car`, mais elle ne respecte pas le con
 
 L'appel à `refuel()` dans `ElectricCar` lance une exception, ce qui ne respect pas le principe LSP. Une voiture électrique ne devrait pas hériter d'une classe qui s'attend à un comportement basé sur du carburant.
 
-## 🔝 Code qui suit le principe de LSP :
+## 🔝 Code qui suit le principe de LSP
 
 ```php
 <?php
