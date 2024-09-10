@@ -1,13 +1,17 @@
+---
+title: Open/Closed Principle (OCP)
+---
+
 # O pour OCP : Open/Closed Principle (Ouvert/fermé)
 
 Une entité (classe ou fonction) doit être ouverte à l'extension mais fermée à la modification.
 
-Détail : 
+**Détail :**
 
 - On doit pouvoir ajouter des fonctionnalités à une entité sans modifier le code déjà existant.
-- Favoriser l'extension du code à sa modifcation.
+- Favoriser l'extension du code à sa modification.
 
-## 🚨 Code qui ne respecte pas le principe de OCP :
+## ⚠️ Code qui ne suit pas le principe de OCP :
 
 Dans l'exemple suivant, nous avons une classe `Book` et une classe `BookDiscountCalculator` qui calcule une réduction sur un livre. 
 
@@ -48,7 +52,7 @@ class Book
 // Class de calcul d'une réduction sur un livre
 class BookDiscountCalculator
 {
-    // 🚨 Mauvaise pratique : cette fonction doit obligatoirement être modifier en cas d'ajout d'un nouveau type de réduction 
+    // ⚠️ Mauvaise pratique : cette fonction doit obligatoirement être modifier en cas d'ajout d'un nouveau type de réduction 
     public function calculateDiscount(Book $book, string $bookType): float
     {
         if ($bookType === Book::BOOK_TYPE_EBOOK) {
@@ -75,11 +79,11 @@ $discount = $calculator->calculateDiscount($book, Book::BOOK_TYPE_LIMITED_EDITIO
 echo "Réduction pour un livre en édition limitée : $discount" . PHP_EOL;
 ```
 
-### Pourquoi ce code ne respecte pas l'OCP ?
+### Pourquoi ce code ne suit pas le principe de l'OCP ?
 
 La classe `BookDiscountCalculator` doit être modifiée à chaque fois qu'un nouveau type de livre (ou une nouvelle logique de réduction) est introduit. Cela ne respecte pas le principe OCP, car nous devons modifier du code existant pour ajouter une nouvelle fonctionnalité.
 
-## ✅ Code qui respecte le principe l'OCP :
+## 🔝 Code qui suit le principe de l'OCP :
 
 ```php
 <?php
