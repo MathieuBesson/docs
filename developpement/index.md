@@ -6,7 +6,7 @@ Bienvenue dans la section **Développement** de ce wiki ! Ici, vous trouverez de
 
 ## 📖 Parce qu'il faut bien commencer par quelque chose
 
-- **[Les principes SOLID](solid/index.md)** : Présentation des principes SOLID avec des exemples en PHP.
+- **[Les principes SOLID](SOLID/index.md)** : Présentation des principes SOLID avec des exemples en PHP.
 
 ---
 
