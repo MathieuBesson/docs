@@ -85,7 +85,7 @@ echo "Réduction pour un livre en édition limitée : $discount" . PHP_EOL;
 
 La classe `BookDiscountCalculator` doit être modifiée à chaque fois qu'un nouveau type de livre (ou une nouvelle logique de réduction) est introduit. Cela ne respecte pas le principe OCP, car nous devons modifier du code existant pour ajouter une nouvelle fonctionnalité.
 
-## 🔝 Code qui suit le principe de l'OCP
+## ✅ Code qui suit le principe de l'OCP
 
 ```php
 <?php

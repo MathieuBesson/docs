@@ -1,3 +1,8 @@
+---
+title: "Introduction"
+---
+
+
 # :computer: Développement
 
 Bienvenue dans la section **Développement** de ce wiki ! Ici, vous trouverez des ressources et des guides concernant le développement logiciel.
@@ -6,7 +11,8 @@ Bienvenue dans la section **Développement** de ce wiki ! Ici, vous trouverez de
 
 ## 📖 Parce qu'il faut bien commencer par quelque chose
 
-- **[Les principes SOLID](SOLID/index.md)** : Présentation des principes SOLID avec des exemples en PHP.
+- **[Quelques principes de clean code](principes-clean-code/index.md)** : Présentation de quelques principes clean code en PHP.
+- **[Les principes SOLID](principes-clean-code/SOLID/index.md)** : Présentation des principes SOLID avec des exemples en PHP.
 
 ---
 

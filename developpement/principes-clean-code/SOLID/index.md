@@ -2,16 +2,9 @@
 
 Les principes SOLID sont une liste de bonnes pratiques destinés aux développeurs de logiciels pour produire du code de qualité, maintenable dans le temps.
 
-Les objectifs de ces principes sont que le code soit :
+Les objectifs de ces principes sont que le code soit **- buger**, **+ lisible**, **+ logique**, **+ maintenable**, **+ extensible**, **+ testable**...
 
-- \- buger 
-- \+ lisible
-- \+ logique
-- \+ maintenable
-- \+ extensible
-- \+ testable
-
-Principes SOLID : 
+**Principes SOLID :**
 
 - **S** : [Principe de responsabilité unique (SRP)](01-principe-de-responsabilite-unique.md)
 - **O** : [Principe ouvert-fermé (OCP)](02-principe-ouvert-ferme.md)
@@ -21,4 +14,4 @@ Principes SOLID :
 
 !!! info 
 
-    Les exemples suivants sont en PHP.
+    Les exemples des liés à la présentation des principes **SOLID** sont en **PHP**.

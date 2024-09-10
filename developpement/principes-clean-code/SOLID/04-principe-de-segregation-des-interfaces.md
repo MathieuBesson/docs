@@ -72,7 +72,7 @@ Les classes `TextDocument` et `PDFDocument` doivent implémenter des méthodes q
 - `TextDocument` : n'a pas besoin de la méthode `convertToPDF()`.
 - `PDFDocument` : n'a pas besoin des méthodes `save()` et `convertToPDF()`.
 
-## 🔝 Code qui suit le principe d'ISP
+## ✅ Code qui suit le principe d'ISP
 
 ```php
 <?php
