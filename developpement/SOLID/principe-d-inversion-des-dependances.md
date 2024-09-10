@@ -1,8 +1,8 @@
 ---
-title: Dependency Inversion Principle
+title: 05 - Dependency Inversion Principle
 ---
 
-# D pour DIP : Dependency Inversion Principle (Inversion des dépendances)
+# Dependency Inversion Principle (DIP), Inversion des dépendances
 
 Une classe doit dépendre de son abstraction, pas de son implémentation.
 

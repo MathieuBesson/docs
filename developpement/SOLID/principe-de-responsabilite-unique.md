@@ -1,8 +1,8 @@
 ---
-title: Single responsibility principle
+title: 01 - Single responsibility principle
 ---
 
-# S pour SRP : Single responsibility principle (Principe de responsabilité unique)
+# Single responsibility principle (SRP), Principe de responsabilité unique
 
 Une classe doit avoir une et une seule raison de changer, une classe ne doit avoir qu'un seul emploi.
 

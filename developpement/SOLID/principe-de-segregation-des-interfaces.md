@@ -1,8 +1,8 @@
 ---
-title: Interface Segregation Principle
+title: 04 - Interface Segregation Principle
 ---
 
-# I pour ISP : Interface Segregation Principle (Ségrégation des interfaces)
+# Interface Segregation Principle (ISP), Ségrégation des interfaces
 
 Un client ne doit être forcé d'implémenter des méthodes qu'il n'utilise pas.
 
