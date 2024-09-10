@@ -11,7 +11,7 @@ Une classe doit dépendre de son abstraction, pas de son implémentation.
 - Éssayer au maximum de typer des interfaces en paramètre plutôt que des objets directement. 
 - Les dépendances entre classes doivent se faire à travers des abstractions.
 
-## ⚠️ Code qui ne suit pas le principe de DIP :
+## ⚠️ Code qui ne suit pas le principe de DIP
 
 Dans l'exemple de code suivant, la classe `ReportGenerator` est directement dépendante de la classe `PDFExporter`, donc toute modification de la classe concrète `PDFExporter` peut affecter la classe `ReportGenerator`.
 

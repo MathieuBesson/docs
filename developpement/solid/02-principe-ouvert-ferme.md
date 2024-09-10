@@ -11,7 +11,7 @@ Une entité (classe ou fonction) doit être ouverte à l'extension mais fermée 
 - On doit pouvoir ajouter des fonctionnalités à une entité sans modifier le code déjà existant.
 - Favoriser l'extension du code à sa modification.
 
-## ⚠️ Code qui ne suit pas le principe de OCP :
+## ⚠️ Code qui ne suit pas le principe de OCP
 
 Dans l'exemple suivant, nous avons une classe `Book` et une classe `BookDiscountCalculator` qui calcule une réduction sur un livre. 
 

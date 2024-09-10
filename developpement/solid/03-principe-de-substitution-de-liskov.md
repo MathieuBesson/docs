@@ -12,7 +12,7 @@ Les objets doivent être remplaçables par des instances de leurs sous-types san
 - Les signatures des fonctions doivent être identiques (en types et en nombre) entre classe parente et enfant.
 - Les exceptions levées doivent être identiques. 
 
-## ⚠️ Code qui ne suit pas le principe de LSP :
+## ⚠️ Code qui ne suit pas le principe de LSP
 
 L'exemple suivant contient quelques mauvaises pratiques correspondants au non repect du principe de LSP.
 

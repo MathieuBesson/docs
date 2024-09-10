@@ -11,7 +11,7 @@ Une classe doit avoir une et une seule raison de changer, une classe ne doit avo
 - Une classe ne doit assumer qu'une seule et unique responsabilité.
 - Cela évite le couplage fort et rend le code moins fragile.
 
-## ⚠️ Code qui ne suit pas le principe de SRP :
+## ⚠️ Code qui ne suit pas le principe de SRP
 
 Une classe `Book` fourre-tout : 
 
