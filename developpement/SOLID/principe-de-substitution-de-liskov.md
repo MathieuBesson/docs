@@ -1,5 +1,5 @@
 ---
-title: Liskov’s Substitution Principle (LSP)
+title: Liskov’s Substitution Principle
 ---
 
 # L pour LSP : Liskov’s Substitution Principle (Substitution de Liskov)

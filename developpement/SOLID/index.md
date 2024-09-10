@@ -2,7 +2,14 @@
 
 Les principes SOLID sont une liste de bonnes pratiques destinés aux développeurs de logiciels pour produire du code de qualité, maintenable dans le temps.
 
-Les objectifs de ces principes sont que le code soit : - buger, + lisible, + logique, + maintenable, + extensible et + testable.
+Les objectifs de ces principes sont que le code soit :
+
+- - buger 
+- + lisible
+- + logique
+- + maintenable
+- + extensible
+- + testable
 
 Principes SOLID : 
 

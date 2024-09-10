@@ -1,5 +1,5 @@
 ---
-title: Interface Segregation Principle (ISP)
+title: Interface Segregation Principle
 ---
 
 # I pour ISP : Interface Segregation Principle (Ségrégation des interfaces)

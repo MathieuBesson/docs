@@ -1,5 +1,5 @@
 ---
-title: Dependency Inversion Principle (DIP)
+title: Dependency Inversion Principle
 ---
 
 # D pour DIP : Dependency Inversion Principle (Inversion des dépendances)

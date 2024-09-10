@@ -1,5 +1,5 @@
 ---
-title: Open/Closed Principle (OCP)
+title: Open/Closed Principle
 ---
 
 # O pour OCP : Open/Closed Principle (Ouvert/fermé)

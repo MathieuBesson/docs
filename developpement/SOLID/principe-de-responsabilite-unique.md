@@ -1,5 +1,5 @@
 ---
-title: Single responsibility principle (SRP)
+title: Single responsibility principle
 ---
 
 # S pour SRP : Single responsibility principle (Principe de responsabilité unique)
