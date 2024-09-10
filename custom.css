@@ -16,27 +16,26 @@ h1, h2, h3, h4, h5{
   font-weight: bold !important;
 }
 
-/* Niveau de base */
-.md-nav__item {
-  position: relative;
-}
+/* Custom de la nav */
 
-/* Style pour le premier niveau */
-.md-nav__item--section {
-  padding-left: 0 !important;
-}
-
-/* Style pour les sous-sections du deuxième niveau */
-.md-nav__item--nested .md-nav__list {
-  padding-left: 13px !important;
-}
-
-/* Style pour les éléments au troisième niveau et plus */
-.md-nav__item--nested .md-nav__list .md-nav__item {
-  padding-left: 13px !important;
-}
-
-/* Style pour les liens actifs */
-.md-nav__link--active {
-  font-weight: bold !important;
+@media (min-width: 1220px) { 
+  .md-nav__item {
+    position: relative;
+  }
+  
+  .md-nav__item--section {
+    padding-left: 0 !important;
+  }
+  
+  .md-nav__item--nested .md-nav__list {
+    padding-left: 13px !important;
+  }
+  
+  .md-nav__item--nested .md-nav__list .md-nav__item {
+    padding-left: 13px !important;
+  }
+  
+  .md-nav__link--active {
+    font-weight: bold !important;
+  }
 }
