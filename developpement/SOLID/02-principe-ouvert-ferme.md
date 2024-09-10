@@ -4,7 +4,9 @@ title: 02 - Open/Closed Principle
 
 # Open/Closed Principle (OCP), Ouvert/fermé
 
-Une entité (classe ou fonction) doit être ouverte à l'extension mais fermée à la modification.
+!!! quote "Principe"
+
+    Une entité (classe ou fonction) doit être ouverte à l'extension mais fermée à la modification.
 
 **Détail :**
 

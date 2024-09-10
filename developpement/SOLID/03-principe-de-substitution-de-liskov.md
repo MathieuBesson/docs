@@ -4,7 +4,9 @@ title: 03 - Liskov’s Substitution Principle
 
 # Liskov’s Substitution Principle (LSP), Substitution de Liskov
 
-Les objets doivent être remplaçables par des instances de leurs sous-types sans altérer le fonctionnement correct du système.
+!!! quote "Principe"
+
+    Les objets doivent être remplaçables par des instances de leurs sous-types sans altérer le fonctionnement correct du système.
 
 **Détail :**
 

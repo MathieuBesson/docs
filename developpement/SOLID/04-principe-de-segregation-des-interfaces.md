@@ -4,7 +4,9 @@ title: 04 - Interface Segregation Principle
 
 # Interface Segregation Principle (ISP), Ségrégation des interfaces
 
-Un client ne doit être forcé d'implémenter des méthodes qu'il n'utilise pas.
+!!! quote "Principe"
+
+    Un client ne doit être forcé d'implémenter des méthodes qu'il n'utilise pas.
 
 **Détail :**
 
