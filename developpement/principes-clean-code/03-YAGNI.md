@@ -12,7 +12,7 @@ title: "03 - YAGNI, You Ain't Gonna Need It"
 
 !!! note
 
-    Attention, cependant il reste important d'architecturer son code de manière à faciliter l'évolution de celui-ci, notamment à travers la mise en place des [principes SOLID](./../SOLID/index.md).
+    Attention, cependant il reste important d'architecturer son code de manière à faciliter l'évolution de celui-ci, notamment à travers la mise en place des [principes SOLID](SOLID/index.md).
 
 **Objectifs :**
 
