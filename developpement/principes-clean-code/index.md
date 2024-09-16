@@ -12,8 +12,6 @@ Les principes de **Clean Code** visent à améliorer la qualité et la maintenab
 - **[YAGNI (You Aren't Gonna Need It)](03-YAGNI.md)** : Ne pas ajouter de fonctionnalités tant qu'elles ne sont pas réellement nécessaires.
 - **[Fail-Fast](04-fail-fast.md)** : Signaler les erreurs le plus rapidement possible pour éviter les problèmes ultérieurs.
 
-Ces liens doivent être adaptés en fonction de l'emplacement de vos documents et des noms de fichiers.
-
 !!! info 
 
     Les exemples des liés à la présentation de ces principes sont en **PHP**.
