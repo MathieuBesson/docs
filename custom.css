@@ -39,3 +39,148 @@ h1, h2, h3, h4, h5{
     font-weight: bold !important;
   }
 }
+
+/* 
+body {
+  counter-reset: h2counter h3counter h4counter h5counter;
+}
+
+h2 {
+  counter-reset: h3counter h4counter h5counter;
+}
+
+h3 {
+  counter-reset: h4counter h5counter;
+}
+
+h4 {
+  counter-reset: h5counter;
+}
+
+h2::before {
+  counter-increment: h2counter;
+  content: counter(h2counter) " - ";
+}
+
+h3::before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) " - ";
+}
+
+h4::before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) " - ";
+}
+
+h5::before {
+  counter-increment: h5counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) " - ";
+} */
+
+
+body {
+  counter-reset: h2counter h3counter h4counter h5counter;
+}
+
+h2 {
+  counter-reset: h3counter h4counter h5counter;
+  color: #4051B5; /* Couleur de base */
+}
+
+h3 {
+  counter-reset: h4counter h5counter;
+  color: #6777E9; /* Variante plus claire */
+}
+
+h4 {
+  counter-reset: h5counter;
+  color: #8E9CE9; /* Variante encore plus claire */
+}
+
+h5 {
+  color: #B5C2E9; /* Variante encore plus claire */
+}
+
+h2::before {
+  counter-increment: h2counter;
+  content: counter(h2counter) " - ";
+}
+
+h3::before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) " - ";
+}
+
+h4::before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) " - ";
+}
+
+h5::before {
+  counter-increment: h5counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) " - ";
+}
+
+
+/* Réinitialisation des compteurs pour la navigation spécifique */
+.md-nav.md-nav--secondary {
+  counter-reset: h2counter h3counter h4counter h5counter;
+}
+
+/* Réinitialisation des compteurs pour chaque niveau */
+.md-nav.md-nav--secondary .md-nav__list > .md-nav__item {
+  counter-reset: h3counter h4counter h5counter;
+}
+
+.md-nav.md-nav--secondary .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item {
+  counter-reset: h4counter h5counter;
+}
+
+.md-nav.md-nav--secondary .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item {
+  counter-reset: h5counter;
+}
+
+/* Incrémentation des compteurs et ajout des préfixes */
+.md-nav.md-nav--secondary .md-nav__list > .md-nav__item > .md-nav__link::before {
+  counter-increment: h2counter;
+  content: counter(h2counter) " - ";
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.md-nav.md-nav--secondary .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link::before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) " - ";
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.md-nav.md-nav--secondary .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link::before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) " - ";
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.md-nav.md-nav--secondary .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link::before {
+  counter-increment: h5counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) " - ";
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Assurez-vous que le conteneur du lien ne coupe pas le texte */
+.md-nav.md-nav--secondary .md-nav__link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%; /* Ajustez selon vos besoins */
+}
+
+/* Assurez-vous que le conteneur parent permet l'ellipsis */
+.md-nav.md-nav--secondary .md-nav__item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
