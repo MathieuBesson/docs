@@ -16,7 +16,7 @@ title: "02 - KISS, Keep It Simple, Stupid"
 - Dimunition des erreurs par les membres de l'équipe.
 - Maintenabilité/évolutivité du code accrue.
 
-## Exemple :
+## Exemple
 
 **⚠️ Code sans le principe KISS**
 

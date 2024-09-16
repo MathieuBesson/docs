@@ -13,7 +13,7 @@ title: 02 - Open/Closed Principle
 - On doit pouvoir ajouter des fonctionnalités à une entité sans modifier le code déjà existant.
 - Favoriser l'extension du code à sa modification.
 
-## ⚠️ Code qui ne suit pas le principe de OCP
+## ⚠️ Sans le principe de l'OCP
 
 Dans l'exemple suivant, nous avons une classe `Book` et une classe `BookDiscountCalculator` qui calcule une réduction sur un livre. 
 
@@ -81,11 +81,11 @@ $discount = $calculator->calculateDiscount($book, Book::BOOK_TYPE_LIMITED_EDITIO
 echo "Réduction pour un livre en édition limitée : $discount" . PHP_EOL;
 ```
 
-### Pourquoi ce code ne suit pas le principe de l'OCP ?
+### Les problèmes
 
 La classe `BookDiscountCalculator` doit être modifiée à chaque fois qu'un nouveau type de livre (ou une nouvelle logique de réduction) est introduit. Cela ne respecte pas le principe OCP, car nous devons modifier du code existant pour ajouter une nouvelle fonctionnalité.
 
-## ✅ Code qui suit le principe de l'OCP
+## ✅ Avec le principe de l'OCP
 
 ```php
 <?php
@@ -161,7 +161,7 @@ echo "Réduction pour un livre en édition limitée : $discount" . PHP_EOL;
 
     Au vue des similarités dans le code des classes `EbookDiscount` et `LimitedEditionDiscount`, celles-ci pourraient être refactorisées de manière à mutualiser la fonction de calcul de discount, à condition que celle-ci respecte les mêmes règles pour toutes les méthodes de calcul.
 
-### Comment ce code repecte l'OCP ?
+### Explications
 
 Dans cette version, les différentes stratégies de calcul de réduction sont séparées dans des classes distinctes qui implémentent l'interface `DiscountStrategy` : `EbookDiscount` et `LimitedEditionDiscount`.
 
@@ -178,7 +178,7 @@ Le code est donc :
 - Créer des classes spécifiques pour chaque typologie, implémentant cette interface.
 - Possibilité d'ajout de nouvelles typologies en créant de nouvelles classes, sans modification du code existant.
 
-## Avantages de l'utilisation du principe ouvert/fermé (OCP)
+## Avantages de l'OCP
 
 - Code plus clair et plus lisible.
 - Beaucoup plus maintenable grâce à l'implémentation de l'interface.

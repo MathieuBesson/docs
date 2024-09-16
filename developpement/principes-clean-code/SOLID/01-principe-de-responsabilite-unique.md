@@ -13,7 +13,7 @@ title: 01 - Single responsibility principle
 - Une classe ne doit assumer qu'une seule et unique responsabilité.
 - Cela évite le couplage fort et rend le code moins fragile.
 
-## ⚠️ Code qui ne suit pas le principe de SRP
+## ⚠️ Sans le principe de SRP
 
 Une classe `Book` fourre-tout : 
 
@@ -72,7 +72,7 @@ $book->printDetails();
 $book->saveToDatabase();
 ```
 
-### Pourquoi ce code ne suit pas le principe de SRP ?
+### Les problèmes
 
 La classe Book a 3 responsabilités :
 
@@ -82,7 +82,7 @@ La classe Book a 3 responsabilités :
 
 Ce code ne respect donc pas le principe de responsabilité unique, ce qui créera à terme une classe fourre-tout et incompréhensible.
 
-## ✅ Code qui suit le principe de SRP
+## ✅ Avec le principe de SRP
 
 Voici les trois classes séparées qui respectent le principe de responsabilité unique (SRP) :
 
@@ -155,7 +155,7 @@ $repository = new BookRepository();
 $repository->saveToDatabase($book);
 ```
 
-### Comment ce code repecte le SRP ?
+### Explications
 
 Dans cette nouvelle version du code les responsabilités sont correctement répartient dans des clases correctement nommées, et ayant chacune un rôle bien précis.  
 
@@ -167,7 +167,7 @@ Dans cette nouvelle version du code les responsabilités sont correctement répa
 
 - Découper une classe qui détient trop de rôles en de multiples classes avec un rôle unique.
 
-## Avantages de l'utilisation du principe de responsabilité unique (SRP)
+## Avantages du SRP
 
 - Code plus clair, plus lisible et plus maintenable.
 - Chaque classe à son rôle.

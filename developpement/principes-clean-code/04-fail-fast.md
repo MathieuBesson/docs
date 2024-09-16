@@ -4,7 +4,7 @@ title: "04 - Fail Fast"
 
 # Principe Fail-Fast
 
-### Principes clés
+## Principes clés
 
 !!! quote "Principe"
 
@@ -17,7 +17,7 @@ title: "04 - Fail Fast"
 - Facililte le debugage.
 - Augmente la robustesse du programme. 
 
-### Exemple :
+## Exemple
 
 **⚠️ Code sans le principe Fail-Fast**
 

@@ -14,7 +14,7 @@ title: 04 - Interface Segregation Principle
 - Une interface ne devrait contenir que les méthodes nécessaires aux classes qui l'implémentent.
 - Une classe implémentant une interface ne devrait être obliger d'implémenter une méthode dont elle n'a pas besoin.
 
-## ⚠️ Code qui ne suit pas le principe d'ISP
+## ⚠️ Sans le principe de l'ISP
 
 Le code ci-dessous contient une interface large `Document` qui nécéssite l'implémentation de nombreuses méthodes pour les classes `TextDocument` et `PDFDocument`.
 
@@ -65,14 +65,14 @@ class PDFDocument implements Document
 }
 ```
 
-### Pourquoi ce code ne suit pas le principe d'ISP ?
+### Les problèmes
 
 Les classes `TextDocument` et `PDFDocument` doivent implémenter des méthodes qui n'ont pas de sens avec leur rôle, seulement dans le but de respecter le contrat avec l'interface `Document`: 
 
 - `TextDocument` : n'a pas besoin de la méthode `convertToPDF()`.
 - `PDFDocument` : n'a pas besoin des méthodes `save()` et `convertToPDF()`.
 
-## ✅ Code qui suit le principe d'ISP
+## ✅ Avec le principe de l'ISP
 
 ```php
 <?php
@@ -118,7 +118,7 @@ class PDFDocument implements Openable, Printable, PDFConvertible
 }
 ```
 
-### Comment ce code repecte le principe d'ISP ?
+### Explications
 
 - Les interfaces ne traite qu'un seul rôle.
 - Les classes sont donc libre d'implémenter ou non ces interfaces en fonction du besoin et de la pertinence.
@@ -129,6 +129,6 @@ class PDFDocument implements Openable, Printable, PDFConvertible
 - Créer des interfaces en fonction des besoins des classes qui les implémenteront. Les interfaces ne doivent inclure que les méthodes nécessaires à ces clients (classes).
 - Éviter l'implémentation d'interface inutiles : implémentations vides ou non pertinentes pour les classes 
 
-## Avantages de l'utilisation du principe de Ségrégation des interfaces (ISP)
+## Avantages de l'ISP
 
 - Code plus modulable et plus lisible

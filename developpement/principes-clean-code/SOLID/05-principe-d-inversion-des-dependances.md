@@ -13,7 +13,7 @@ title: 05 - Dependency Inversion Principle
 - Éssayer au maximum de typer des interfaces en paramètre plutôt que des objets directement. 
 - Les dépendances entre classes doivent se faire à travers des abstractions.
 
-## ⚠️ Code qui ne suit pas le principe de DIP
+## ⚠️ Sans le principe du DIP
 
 Dans l'exemple de code suivant, la classe `ReportGenerator` est directement dépendante de la classe `PDFExporter`, donc toute modification de la classe concrète `PDFExporter` peut affecter la classe `ReportGenerator`.
 
@@ -48,13 +48,13 @@ class ReportGenerator
 }
 ```
 
-### Pourquoi ce code ne suit pas le principe de DIP ?
+### Les problèmes
 
 la classe `ReportGenerator` apporte une dépendance direct avec `PDFExporter` introduisant un couplage fort entre ces deux classes concrètes. 
 
 L'objectif est de diminuer ce couplage en replaçant la dépendance concrète par une dépendance d'abstraction. 
 
-## ✅ Code qui suit le principe de DIP
+## ✅ Avec le principe du DIP
 
 ```php
 <?php
@@ -93,7 +93,7 @@ class ReportGenerator
 }
 ```
 
-### Comment ce code repecte le principe de DIP ?
+### Explications
 
 - Cette modification réduit le couplage entre les différentes classes.
 - `ReportGenerator` dépend maintenant de l'interface `Exporter`, et plus de la classe concrète `PDFExporter`. 
@@ -105,7 +105,7 @@ class ReportGenerator
 - Utiliser l'injection de dépendance pour fournir les implémentations concrètes des abstractions.
 - Utiliser la la composition plutôt que l'héritage, et veiller à la séparation des responsabilités.
 
-## Avantages de l'utilisation du principe de Dependency Inversion Principle (DIP)
+## Avantages du DIP
 
 - Réduction du couplage fort entre les implémentation et les abstractions.
 - Le code est plus flexible, plus lisible et moins interdépendant.

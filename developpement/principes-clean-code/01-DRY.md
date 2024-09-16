@@ -23,7 +23,7 @@ title: "01 - DRY, Don't Repeat Yourself"
 - Abstraction : Diminuer le nombre d'opérations logiques et les regrouper au maximum
 - Normalisation des données : Proposer une standardisation pour regrouper les éléments par corrélation
 
-## Exemple :
+## Exemple
 
 **⚠️ Code sans le principe DRY :**
 

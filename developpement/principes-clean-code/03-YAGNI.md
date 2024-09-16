@@ -4,7 +4,7 @@ title: "03 - YAGNI, You Ain't Gonna Need It"
 
 # YAGNI : You Ain't Gonna Need It
 
-### Principes clés
+## Principes clés
 
 !!! quote "Principe"
 
@@ -19,7 +19,7 @@ title: "03 - YAGNI, You Ain't Gonna Need It"
 - Réduire la complexité inutile.
 - Améliorer la maintenabilité et la flexibilité.
 
-### Exemple :
+## Exemple
 
 **⚠️ Code sans le principe YAGNI**
 

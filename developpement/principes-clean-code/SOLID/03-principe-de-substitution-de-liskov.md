@@ -14,7 +14,7 @@ title: 03 - Liskov’s Substitution Principle
 - Les signatures des fonctions doivent être identiques (en types et en nombre) entre classe parente et enfant.
 - Les exceptions levées doivent être identiques. 
 
-## ⚠️ Code qui ne suit pas le principe de LSP
+## ⚠️ Sans le principe du LSP
 
 L'exemple suivant contient quelques mauvaises pratiques correspondants au non repect du principe de LSP.
 
@@ -74,16 +74,15 @@ echo $classicCar->drive() . PHP_EOL; // Fonctionne : "Driving..."
 // Création d'une voiture électrique
 $electricCar = new ElectricCar();
 echo $electricCar->drive() . PHP_EOL; // Erreur : "Can't drive, out of fuel!" (logique cassée)
-
 ```
 
-### Pourquoi ce code ne suit pas le principe de LSP ?
+### Les problèmes
 
 La classe `ElectricCar` est dérivée de `Car`, mais elle ne respecte pas le contrat de la classe `Car` dont elle hérite. Elle ne peut pas utiliser le carburant ni se comporter comme une voiture classique.
 
 L'appel à `refuel()` dans `ElectricCar` lance une exception, ce qui ne respect pas le principe LSP. Une voiture électrique ne devrait pas hériter d'une classe qui s'attend à un comportement basé sur du carburant.
 
-## ✅ Code qui suit le principe de LSP
+## ✅ Avec le principe du LSP
 
 ```php
 <?php
@@ -153,7 +152,7 @@ $electricCar = new ElectricCar(5);
 echo $electricCar->drive() . PHP_EOL;  // Fonctionne : "Driving an electric car..."
 ```
 
-### Comment ce code repecte le LSP ?
+### Explications
 
 Séparation des comportements : 
 
@@ -169,7 +168,7 @@ Maintenant, que ce soit une voiture à essence ou une voiture électrique, on pe
 - Les sous-classes doivent garantir au minimum les mêmes résultats ou mieux que la classe de base, sans élimnier les comportements attendus à la base.
 
 
-## Avantages de l'utilisation du principe de Substitution de Liskov (LSP)
+## Avantages du LSP
 
 - Moins de bug liés à la mauvaise utilisation de l'héritage.
 - Facilite la lisibilité et la maintenance du code.
