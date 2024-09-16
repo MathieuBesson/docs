@@ -16,14 +16,14 @@ Bienvenue dans la section **Développement** de ce wiki ! Ici, vous trouverez de
 
 ---
 
-## 📖 Articles et sujets à venir
+## ⌛ Articles et sujets à venir
 
-- **[Design patterns]** : Présentation des principaux design patterns, accompagnés d'exemples en PHP.
-- **[Les tests unitaires avec PHPUnit]** : Comment mettre en place des tests unitaires avec PHPUnit, accompagnés d'exemples.
-- **[PSR-12]** : Résumer des bonnes pratiques en PHP avec PSR-12, accompagnés d'exemples.
-- **[Symfony 7]** : Les nouveautés de Symfony 7 (et oui il est encore temps)
-- **[Liste de livres bonnes pratiques et architectures]**
-- **[Algo de tri]** : Les différents algorithmes de tri, accompagnés d'exemples en PHP.
+- **Design patterns** : Présentation des principaux design patterns, accompagnés d'exemples en PHP.
+- **Les tests unitaires avec PHPUnit** : Comment mettre en place des tests unitaires avec PHPUnit, accompagnés d'exemples.
+- **PSR-12** : Résumer des bonnes pratiques en PHP avec PSR-12, accompagnés d'exemples.
+- **Symfony 7** : Les nouveautés de Symfony 7 (et oui il est encore temps)
+- **Liste de livres bonnes pratiques et architectures**
+- **Algorithmes de tri** : Les différents algorithmes de tri, accompagnés d'exemples en PHP.
 
 ---
 
