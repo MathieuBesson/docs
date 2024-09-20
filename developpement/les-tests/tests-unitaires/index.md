@@ -291,7 +291,7 @@ Une annotation est une indication en haut d'un bloc de code (méthode ou classe)
  */
 ```
 
-#### Quelques annotations PHPUnit
+#### Annotations avec PHPUnit
 
 - `@before` et `@after`: Indique les méthodes devant être appelées avant et après chaque test.
 - `@expectedException Exception` : Remplace le try, catch d'une `Exception`.
