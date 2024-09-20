@@ -1,14 +1,16 @@
 ---
-title: Tests unitaires
+title: Introduction
 ---
 
 # Les tests unitaires
 
-## Définition
+## C'est quoi ? 
+
+### Définition
 
 Un test unitaire est un mécanisme permettant de valider le fonctionnement d'une unité de code (fonctions ou méthodes), indépendamment des autres parties du système (isolation).
 
-## Objectifs
+### Objectifs
 
 - Éviter les régressions.
 - Gagner du temps.
@@ -16,12 +18,12 @@ Un test unitaire est un mécanisme permettant de valider le fonctionnement d'une
 - Forcer la modularité du code pour faciliter les tests améliorant simultanément la qualité du code.
 - Les TU deviennent une documentation vivante des besoins et comportements des méthodes.
 
-## Indices de qualité
+### Indices de qualité
 
-**Deterministe** : À chaque exécution le test effectue les strictement les mêmes vérifications et retourne le même résultat.
-**Unitaire** : Isolé et indépendant des composants extérieurs, en utilisant des mocks pour simuler les interactions externes.
-**Normalisé** : Le nom d'un test doit respecter la norme : `test + fonctionNom + comportementATester` en [camelCase](https://fr.wikipedia.org/wiki/Camel_case) (ex : `testregisterWithAdminUser()`).
-**Automatisé** : Sans actions manuelles.
+- **Deterministe** : À chaque exécution le test effectue les strictement les mêmes vérifications et retourne le même résultat.
+- **Unitaire** : Isolé et indépendant des composants extérieurs, en utilisant des mocks pour simuler les interactions externes.
+- **Normalisé** : Le nom d'un test doit respecter la norme : `test + fonctionNom + comportementATester` en [camelCase](https://fr.wikipedia.org/wiki/Camel_case) (ex : `testregisterWithAdminUser()`).
+- **Automatisé** : Sans actions manuelles.
 
 !!! info "Outil"
 
@@ -101,7 +103,7 @@ Il est donc nécessaire d'isoler le test des interactions externes (services, cl
 Un stub est un objet simulé qui retourne des réponses prédéfinies lorsqu'il est appelé. 
 Il ne contient pas de logique complexe et sert à fournir des valeurs spécifiques en réponse à certaines interactions.
 
-Caractéristiques : 
+**Caractéristiques :**
 
 - Retourne une réponse fixe et pré-configuré.
 - Ne vérifie pas un comportement interne à l'objet simulé.
@@ -170,7 +172,7 @@ class BookServiceTest extends TestCase {
 
 Un mock est un stub avancé, il permet en plus de définir des attentes spécifiques auprès de l'objet simulé (méthode appellée plusieurs fois, arguments spécifiques...).
 
-Caractéristiques : 
+**Caractéristiques :**
 
 - Permet de faire des vérifications du comportement interne à l'objet simulé.
 
@@ -281,7 +283,7 @@ class FooTest extends TestCase {
 
 Une annotation est une indication en haut d'un bloc de code (méthode ou classe) permettant d'jouter des éléments de configuration.
 
-Format :
+**Format :**
 
 ```php
 /**
@@ -292,7 +294,7 @@ Format :
 #### Quelques annotations PHPUnit
 
 - `@before` et `@after`: Indique les méthodes devant être appelées avant et après chaque test.
-- `@expectedException Exception` : Remplace le try, catch d'une Exception.
+- `@expectedException Exception` : Remplace le try, catch d'une `Exception`.
 - `@dataProvider` : Fournit un jeu de test à une fonction de test.
 ```php
 <?php
