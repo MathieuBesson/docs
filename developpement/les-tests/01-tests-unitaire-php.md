@@ -325,6 +325,8 @@ class FooTest extends TestCase
 
 ## La suite ? 🚀
 
-Les tests unitaires sont un outil puissant pour valider au fil du temps le fonctionnement d'une méthode de manière isolé. Cependant, de part leur isolation du contexte de l'application et leur aspect unitaire, les tests unitaires ne permettent pas de valider le fonctionnement total d'une fonctionnalité ou de l'application en général, de bout en bout. Il est donc parfois recommandé d'utiliser d'autres types de tests comme les tests d'intégration, les tests fonctionnels ou encore les tests end-to-end pour valider différemment le comportement d'une l'application.
+Les tests unitaires sont un outil puissant pour valider au fil du temps le fonctionnement d'une méthode de manière isolé. Cependant, de part leur isolation du contexte de l'application et leur aspect unitaire, les tests unitaires ne permettent pas de valider le fonctionnement total d'une fonctionnalité ou de l'application en général, de bout en bout. 
+
+Il est donc parfois recommandé d'utiliser d'autres types de tests comme les tests d'intégration, les tests fonctionnels ou encore les tests end-to-end pour valider différemment le comportement d'une l'application.
 
 L'article suivant explore le mise en place de plusieurs types de [tests dans l'environnement d'une application Symfony](./tests-symfony/index.md).

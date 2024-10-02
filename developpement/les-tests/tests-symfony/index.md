@@ -4,10 +4,10 @@ title: Introduction
 
 # Les tests avec Symfony
 
-Le framework de test PHPUnit permet de tester des application à l'aide de **tests unitaires**. Cependant, les tests unitaires ne permettent malheureusement pas de tester l'ensemble d'une application. Dans le cas d'une application web complexe, par exemple, il est nécéssaire de vérifier que : 
+Le framework de test PHPUnit permet de tester des applications à l'aide de **tests unitaires**. Cependant, les tests unitaires ne permettent malheureusement pas de tester l'ensemble d'une application. Dans le cas d'une application web complexe, par exemple, il est nécéssaire de vérifier que : 
 
 - Les intéractions entre les différents modules fonctionnent comme attendu (**tests d'intégration**).
-- Les fonctionnalités principales répondent toujours aux exigences (**tests fonctionels**).
+- Les fonctionnalités principales répondent toujours aux exigences métiers (**tests fonctionels**).
 - Les parcours de l'utilisateur final et ses comportements habituels sur l'application sont bien fonctionnels (**tests end-to-end**).
 
 ## Outils de tests de Symfony
@@ -40,7 +40,7 @@ Les classes `KernelTestCase`, `WebTestCase`, `ApiTestCase` incluses dans le bund
 
 Avant de pouvoir écrire et exécuter des tests d'intégration avec Symfony et PHPUnit, il est nécéssaire de configurer l'environnement de test (isolé de l'environnement de développement et de production).
 
-Le fichier `.env.test` permet de configurer les variables d'environnement dans le context d'éxécution des tests.
+Le fichier `.env.test` permet de configurer les variables d'environnement dans le contexte d'éxécution des tests.
 
 !!! info "Surcharge local"
 
@@ -57,7 +57,7 @@ DATABASE_URL="mysql://user:password@127.0.0.1:3306/db_test?serverVersion=5.7"
 ```
 
 Depuis Symfony `5.3`, il est possible de configurer différemment les bundles en fonction de l'environnement d'éxécution de l'application avec la clé `when@test`.
-Le détail des différentes possibilités de configuration de tests est disponible [ici](https://symfony.com/blog/new-in-symfony-5-3-configure-multiple-environments-in-a-single-file)
+Le détail des différentes possibilités de configuration de tests est disponible [ici](https://symfony.com/blog/new-in-symfony-5-3-configure-multiple-environments-in-a-single-file).
 
 
 Exemple avec le bundle `webpack-encore` :
@@ -109,7 +109,7 @@ tests:
 Au lancement des tests, ceux-ci sont lancés les uns après les autres. Ainsi, l'exécution du premier test peut influer sur les résultats du second en fonction de leur ordre dans la séquence de lancement. 
 
 Le bundle [`dama/doctrine-test-bundle`](https://github.com/dmaicher/doctrine-test-bundle) permet de pallier à ce problème. 
-Ainsi, toutes les requêtes faites sur la base de donnée lors des tests est automatiquement effectuée sous forme de transaction, permettant ainsi de ne pas modifier réellement l'état de la base de donnée et donc de ne pas influer sur les autres tests.
+Ainsi, toutes les requêtes faites sur la base de donnée lors des tests seront nativement effectuées sous forme de transaction, permettant ainsi de ne pas modifier réellement l'état de la base de donnée et donc de ne pas influer sur les tests suivants.
 
 ## La suite ? 🚀
 

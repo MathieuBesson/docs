@@ -10,13 +10,13 @@ title: Tests d'intégration Symfony
 
 ## C'est quoi ?
 
-Au delà des [tests unitaires](./01-tests-unitaire-php.md) testant simplement les entrées, sorties et comportemment de manière isolé des méthodes simple des classes d'une application, il est parfois nécéssaire de vérifier le fonctionnement d'un module ou d'un composant (ex : un controleur, un formulaire, un module de recherche...).
+Au delà des [tests unitaires](./01-tests-unitaire-php.md) testant simplement les entrées, sorties et comportemment de manière isolé des méthodes simples des classes d'une application, il est parfois nécéssaire de vérifier le fonctionnement d'un module ou d'un composant (ex : intéraction avec la BDD, méthodes dites "procédures", intéraction avec des services externes...).
 
 Dans cette optique, les tests d'intégration permettent de vérifier le bon fontionnement d'un ensemble de modules ensemble, de manière isolé du reste de l'application.
 
 !!! quote "Définition"
 
-    Un test d'intégration vérifie le fonctionnement de plusieurs modules d'un logiciel ensemble.
+    Un test d'intégration vérifie le fonctionnement de **plusieurs modules** d'un logiciel **ensemble**.
 
 ### Objectifs
 
@@ -46,7 +46,7 @@ La classe `KernelTestCase` issue du bundle `symfony/test-pack` de Symfony offre 
 L'exemple suivant détail l'accès à un service depuis un test d'intégration. 
 
 - Dans un premier temps, il est nécéssaire de démarrer le kernel de Symfony
-- Après récupération du contenur d'injection de dépendance, on peut initialiser le service voulu
+- Après récupération du contenur d'injection de dépendance, on peut initialiser le service souhaité
 - On peut ensuite effectuer des tests sur le service
 
 ```php
@@ -112,8 +112,8 @@ En reprenant l'exemple précédant et les principes détaillés plus haut, le te
 
 Par étape, il est donc nécéssaire de vérifier que : 
 
-- L'ajout de l'article fait bien appel au service `SlugGenerator` pour associé un slug à l'article.
-- Une entité `Article` est correctement hydraté et sauvegardé en base de donnée par la fonction.
+- L'ajout de l'article fait bien appel au service `SlugGenerator` pour associer un slug à l'article.
+- Une entité `Article` est correctement hydraté et sauvegardé en base de donnée par la méthode.
 
 
 ```php
@@ -188,17 +188,9 @@ class ArticleServiceTest extends KernelTestCase
 }
 ```
 
-Le test suivant test don l'intégration de la méthode `addArticle()` avec la base de donnée et le service `SlugGenerator`. 
-L'objectif établie est ici atteint, ce test permettant de valider le bon fontionnement de cette fonction et de son environnement proche, de manière isolé du reste de l'application.
+Le test précédant test donc l'intégration de la méthode `addArticle()` avec la base de donnée et le service `SlugGenerator`. 
+L'objectif établi est ici atteint, ce test permettant de valider le bon fontionnement de cette méthode dans son environnement proche, de manière isolé du reste de l'application.
 
 !!! info "💡 Comment valider une fonctionnalité entière : Les tes fonctionnelles" 
 
-    À plus haut niveau, il est possible de tester et vérifier des comportements ou fonctionnalités entières répondent correctement au besoins. Une doc est prévu à ce sujet sur l'implémentation des tests fonctionnelles dans une application Symfony. 🚀
-
-
-
-
-
-
-
-+ Ajouter lien vers article principale index.md : Test avec Symfony
+    À plus haut niveau, il est possible de tester et vérifier des comportements ou fonctionnalités entières répondent correctement au besoin métier. Une doc est prévu à ce sujet sur l'implémentation des tests fonctionnelles dans une application Symfony. 🚀
