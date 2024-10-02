@@ -193,4 +193,4 @@ L'objectif établi est ici atteint, ce test permettant de valider le bon fontion
 
 !!! info "💡 Comment valider une fonctionnalité entière : Les tests fonctionnelles" 
 
-    À plus haut niveau, il est possible de tester et vérifier des comportements ou fonctionnalités entières répondent correctement au besoin métier. Une doc est prévu à ce sujet sur l'implémentation des tests fonctionnelles dans une application Symfony. 🚀
+    À plus haut niveau, il est possible de tester et vérifier que des comportements ou fonctionnalités entières répondent correctement au besoin métier. Une doc est prévu à ce sujet sur l'implémentation des tests fonctionnelles dans une application Symfony. 🚀
