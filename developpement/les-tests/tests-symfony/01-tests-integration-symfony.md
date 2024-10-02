@@ -191,6 +191,6 @@ class ArticleServiceTest extends KernelTestCase
 Le test précédant test donc l'intégration de la méthode `addArticle()` avec la base de donnée et le service `SlugGenerator`. 
 L'objectif établi est ici atteint, ce test permettant de valider le bon fontionnement de cette méthode dans son environnement proche, de manière isolé du reste de l'application.
 
-!!! info "💡 Comment valider une fonctionnalité entière : Les tes fonctionnelles" 
+!!! info "💡 Comment valider une fonctionnalité entière : Les tests fonctionnelles" 
 
     À plus haut niveau, il est possible de tester et vérifier des comportements ou fonctionnalités entières répondent correctement au besoin métier. Une doc est prévu à ce sujet sur l'implémentation des tests fonctionnelles dans une application Symfony. 🚀
