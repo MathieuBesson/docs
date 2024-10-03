@@ -10,7 +10,7 @@ title: Tests d'intégration Symfony
 
 ## C'est quoi ?
 
-Au delà des [tests unitaires](./01-tests-unitaire-php.md) testant simplement les entrées, sorties et comportemment de manière isolé des méthodes simples des classes d'une application, il est parfois nécéssaire de vérifier le fonctionnement d'un module ou d'un composant (ex : intéraction avec la BDD, méthodes dites "procédures", intéraction avec des services externes...).
+Au delà des [tests unitaires](./../01-tests-unitaire-php.md) testant simplement les entrées, sorties et comportemment de manière isolé des méthodes simples des classes d'une application, il est parfois nécéssaire de vérifier le fonctionnement d'un module ou d'un composant (ex : intéraction avec la BDD, méthodes dites "procédures", intéraction avec des services externes...).
 
 Dans cette optique, les tests d'intégration permettent de vérifier le bon fontionnement d'un ensemble de modules ensemble, de manière isolé du reste de l'application.
 
