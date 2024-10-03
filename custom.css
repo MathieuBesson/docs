@@ -184,3 +184,5 @@ h5::before {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+pre code { background-color: #272A35 !important; }
