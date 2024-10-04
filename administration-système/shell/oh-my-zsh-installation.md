@@ -40,7 +40,9 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.o
 ```
 
 - Modification des configurations .zshrc : thème [agnoster](https://github.com/agnoster/agnoster-zsh-theme) et ajout des plugins
-```shell title="/home/user/.zshrc"
+
+=== "/home/user/.zshrc"
+```shell
 ZSH_THEME="agnoster"
 
 plugins=(last-working-dir git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)

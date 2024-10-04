@@ -19,7 +19,9 @@ sudo mkdir -p /var/www/docusaurus && sudo chown -R www-data:www-data /var/www/do
 ```
 
 Création du Dockerfile de Docusaurus
-```Dockerfile title="/var/www/docusaurus/Dockerfile"
+
+=== "/var/www/docusaurus/Dockerfile"
+```Dockerfile
 FROM node:16-slim
 
 RUN mkdir -p /var/www/docusaurus
@@ -36,7 +38,9 @@ ENTRYPOINT npm install --frozen-lockfile && npm run serve -- --build --port 8001
 ```
 
 Création du docker-compose.yml de Docusaurus
-```yaml title="/var/www/docusaurus/docker-compose.yml"
+
+=== "/var/www/docusaurus/docker-compose.yml"
+```yaml
 version: "3"
 
 services:

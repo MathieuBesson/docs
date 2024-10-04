@@ -25,7 +25,8 @@ sudo vi /var/www/bitwarden/docker-compose.yml
 
 Avec le contenu suivant :
 
-```yml title="/var/www/bitwarden/docker-compose.yml"
+=== "/var/www/bitwarden/docker-compose.yml"
+```yaml
 version: "3"
 
 services:
@@ -78,7 +79,7 @@ docker rm bitwarden
 
 Récupération de la dernière version 
 ```bash
-docker pull bitwardenrs/server:latest
+docker pull vaultwarden/server:latest
 ```
 
 Redémarrage du conteneur

@@ -26,11 +26,15 @@ Dans cette optique, les tests d'intégration permettent de vérifier le bon font
 
 ### Indices de qualité
 
-- **Fiable** : Résultats similaires à chaque exécution, même avec plusieurs composants impliqués.
-- **Représentatif** : Reproduction de cas réels pour vérifier les intégrations dans des conditions proches de la production.
-- **Automatisé** : Exécutable sans actions manuelles.
+- ✅ **Fiable** : Résultats similaires à chaque exécution, même avec plusieurs composants impliqués.
+- ✅ **Représentatif** : Reproduction de cas réels pour vérifier les intégrations dans des conditions proches de la production.
+- ✅ **Automatisé** : Exécutable sans actions manuelles.
 
 ## Notions importantes
+
+!!! info "Exemples avec Symfony et PHPUnit"
+
+    Les exemples suivants permettent de mettre en place des tests d'intégration dans une application Symfony à l'aide du framework de test PHPUnit. Les paragraphes suivants présentent donc les notions de base de ce framework de test.
 
 ### La classe `KernelTestCase`
 
@@ -39,7 +43,6 @@ La classe `KernelTestCase` issue du bundle `symfony/test-pack` de Symfony offre 
 - La possibilité d'accès au contenur de services de Symfony, 
 - L'initialisation du noyau pour configuration de l'environnement (services, routes, bundles, injection de dépendance, variables d'env, )
 - L'intéraction avec la base de donnée via Doctrine
-- Bien plus encore...
 
 ### Accèder à un service dans un test
 
