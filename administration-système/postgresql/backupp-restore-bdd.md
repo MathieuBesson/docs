@@ -1,5 +1,8 @@
 ---
 title: Backup/Restaure BDD PostgreSQL
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Backupp et restauration d'une base de donnée PostgreSQL

@@ -1,5 +1,9 @@
 ---
 title: "03 - YAGNI, You Ain't Gonna Need It"
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # YAGNI : You Ain't Gonna Need It

@@ -1,5 +1,9 @@
 ---
 title: Introduction
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 10/09/2024
 ---
 
 # Les tests avec Symfony
@@ -115,6 +119,6 @@ Ainsi, toutes les requêtes faites sur la base de donnée lors des tests seront 
 
 - [Les tests unitaires en PHP](./../01-tests-unitaire-php.md)
 - [Les tests d'intégration avec Symfony](./01-tests-integration-symfony.md)
+- [Les tests fonctionnels avec Symfony](./02-tests-fonctionnels-symfony.md)
 -  À venir : 
-    - Les tests fonctionnels avec Symfony
     - Les tests end-to-end avec [Panther](https://github.com/symfony/panther)

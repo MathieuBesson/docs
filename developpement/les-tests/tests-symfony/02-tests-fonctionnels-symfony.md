@@ -1,5 +1,9 @@
 ---
 title: Tests fonctionnels Symfony
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 8/10/2024
 ---
 
 # Tests fonctionnels avec Symfony
@@ -10,7 +14,7 @@ title: Tests fonctionnels Symfony
 
 ## C'est quoi ?
 
-Dans un cadre de test plus large que les [tests unitaires](./../01-tests-unitaire-php.md) ou les [tests d'intégration](./01-tests-integration-symfony.md), les tests fonctionnels vérifient le fonctionnement correcte d'une application en se basant plus particulièrement sur les specs fonctionnelles.
+Dans un cadre de test plus large que les [tests unitaires](./../01-tests-unitaire-php.md) ou les [tests d'intégration](./01-tests-integration-symfony.md), les tests fonctionnels vérifient le fonctionnement correcte d'une application en se basant plus particulièrement sur les spécifications fonctionnelles et les attentes métiers sur l'application.
 
 Ce type de test n'est pas isolé (à contrario des TU et TI) et est en charge de s'assurer du bon fonctionnnement d'une fonctionnalité/composant dans son entiereté : intéraction utilisateur, API, BDD... 
 
@@ -45,7 +49,7 @@ Ce type de test n'est pas isolé (à contrario des TU et TI) et est en charge de
 
 ### La classe `WebTestCase`
 
-La classe `WebTestCase` issue du bundle `symfony/test-pack` de Symfony offre de multiples fonctionnalités tel que : 
+La classe `WebTestCase` issue du bundle [`symfony/test-pack`](https://packagist.org/packages/symfony/test-pack){target="_blank"} de Symfony offre de multiples fonctionnalités tel que : 
 
 - Simulation d'un client HTTP classique
 - Accès au conteneur de service
@@ -60,7 +64,7 @@ Dans le cadre de la mise en place de tests fonctionnels, il est souvent utile d'
 
 Dans cette optique la classe de test `WebTestCase` offre de nombreuses fonctionnalités. Liste des possibilités avec le `client` et le `crawler` :
 
-Requêtes et traitement de la réponse :  
+**Requêtes et traitement de la réponse :**
 
 ```php
 <?php
@@ -85,7 +89,7 @@ $this->assertSelectorTextContains('h1', 'Toy');
 $this->assertCount(1, $crawler->filter('h1'));
 ```
 
-Gestion des redirections : 
+**Gestion des redirections :**
 
 ```php
 <?php
@@ -96,7 +100,7 @@ $this->assertResponseRedirects('/products/1234');
 $client->followRedirect();
 ```
 
-Accès au conteneur d'injection de dépendance : 
+**Accès au conteneur d'injection de dépendance :**
 
 ```php
 <?php
@@ -106,7 +110,7 @@ $container = self::$container;
 $doctrine = $container->get('doctrine');
 ```
 
-Gestion de la session et des cookies : 
+**Gestion de la session et des cookies :**
 
 ```php
 <?php
@@ -132,10 +136,10 @@ Dans cette optique, la classe `WebTestCase` fournit une fonction permettant d'au
 
 $client = static::createClient();
 
-// Récupérer l'utilisateur (par exemple depuis Doctrine)
+// Récupération de l'utilisateur (par exemple depuis Doctrine)
 $user = $client->getContainer()->get('doctrine')->getRepository(User::class)->findOneByEmail('contact@doc.mathieu-besson.fr');
 
-// Authentifier l'utilisateur
+// Authentification de l'utilisateur
 $client->loginUser($user);
 ```
 
@@ -180,6 +184,8 @@ Les assertions sur le **crawler** :
 | **Contenu balise**       | `assertSelectorTextContains('h1', 'Bienvenue')`        |
 | **Non existence classe** | `assertSelectorNotExists('.error-messsage')`           |
 | **Nombre d'éléments**    | `assertCount(3, $crawler->filter('div.product-item'))` |
+
+Liste d'une grande partie des [assertions web](https://symfony.com/doc/current/testing.html#testing-the-response-assertions){target="_blank"} disponibles.
 
 ## Exemple final de test fonctionnel
 
@@ -250,9 +256,9 @@ class ProductControllerTest extends WebTestCase
 }
 ```
 
-Ce test permet de vérifier que la création d'un produit fonctionne correctement. Pour être totalement sûr du fonctionnement de la création d'un produit, il serait nécéssaire d'implémenter d'autres tests pour vérifier le comportement avec : 
+Ce test permet de vérifier que la création d'un produit fonctionne correctement. Pour être totalement sûr du fonctionnement de la création d'un produit, il serait nécéssaire d'implémenter d'autres tests fonctionnels pour vérifier le comportement avec : 
 
-- des données érronés (mauvais type de donnée, incohérence, données vides, doublon produit, longueur chaine et entiers)
+- des données erronées (mauvais type de donnée, incohérence, données vides, doublon produit, longueur chaine et entiers)
 - des droits d'accès insuffisant
 - des données facultatives non remplis...
 
@@ -260,6 +266,6 @@ Ce test permet de vérifier que la création d'un produit fonctionne correctemen
 
 **Valider une fonctionnalité comme un utilisateur final : Les tests end-to-end**
 
-Dans le cadre d'une application ayant une partie front-end dynamique avec des framework JS (React.js, Vue.js, Angular...), les tests fonctionnels comme présentés précedemment ne seront pas efficaces. 
+Dans le cadre d'une application ayant une partie front-end dynamique avec des framework JS tel que React.js, Vue.js, Angular..., les tests fonctionnels comme présentés précedemment ne seront pas efficaces. 
 
-Dans ce type de cas il est nécéssaire de simuler un navigateur lors du test pour valider une fonctionnalité de l'application, ce type de tests est appelé **tests end-to-end**. Il est possible de mettre en place ce type de tests à l'aide d'outil comme [Panther](https://github.com/symfony/panther) permettant de scrapper directement le contenu d'une page, en utilisant un navigateur, comme le ferait l'utilisateur final 🚀.
+Dans ce type de cas il est nécéssaire de simuler un navigateur lors du test pour valider une fonctionnalité de l'application, ce type de tests est appelé **tests end-to-end**. Il est possible de mettre en place ce type de tests à l'aide d'outil comme [Panther](https://github.com/symfony/panther){target="_blank"} (Alternatives JS : [Cypress](https://www.cypress.io/){target="_blank"}, [Playwright](https://playwright.dev/){target="_blank"}, [Selenium](https://www.selenium.dev/){target="_blank"}, [Puppeteer](https://pptr.dev/){target="_blank"}) permettant de scrapper directement le contenu d'une page, en utilisant un navigateur, comme le ferait l'utilisateur final 🚀.

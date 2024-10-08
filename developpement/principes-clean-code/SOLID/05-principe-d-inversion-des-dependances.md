@@ -1,5 +1,9 @@
 ---
 title: 05 - Dependency Inversion Principle
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # Dependency Inversion Principle (DIP), Inversion des dépendances

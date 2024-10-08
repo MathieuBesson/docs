@@ -1,5 +1,9 @@
 ---
 title: Tests unitaires en PHP
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 10/09/2024
 ---
 
 # Les tests unitaires en PHP
@@ -20,12 +24,12 @@ title: Tests unitaires en PHP
 
 - **Deterministe** : À chaque exécution le test effectue les strictement les mêmes vérifications et retourne le même résultat.
 - **Unitaire** : Isolé et indépendant des composants extérieurs, en utilisant des mocks pour simuler les interactions externes.
-- **Normalisé** : Le nom d'un test doit respecter la norme : `test + fonctionNom + comportementATester` en [camelCase](https://fr.wikipedia.org/wiki/Camel_case) (ex : `testregisterWithAdminUser()`).
+- **Normalisé** : Le nom d'un test doit respecter la norme : `test + fonctionNom + comportementATester` en [camelCase](https://fr.wikipedia.org/wiki/Camel_case){target="_blank"} (ex : `testregisterWithAdminUser()`).
 - **Automatisé** : Éxécutable Sans actions manuelles.
 
 !!! info "Outil"
 
-    Pour mettre en place des tests unitaires avec [PHPUnit](https://phpunit.de) sur un projet PHP, il est d'abord nécéssaire de suivre la doc d'installation officielle de [PHPUnit](https://docs.phpunit.de/en/11.3/installation.html#composer) avec composer.
+    Pour mettre en place des tests unitaires avec [PHPUnit](https://phpunit.de){target="_blank"} sur un projet PHP, il est d'abord nécéssaire de suivre la doc d'installation officielle de [PHPUnit](https://docs.phpunit.de/en/11.4/installation.html#composer){target="_blank"} avec composer.
 
 ## Notions importantes
 
@@ -91,7 +95,7 @@ Avec PHPUnit, il existe plusieurs types d'assertions basées sur différents typ
 
 !!! info 
 
-    La liste complète avec des exemples est disponible [ici](https://docs.phpunit.de/en/10.5/assertions.html).
+    La liste complète avec des exemples est disponible [ici](https://docs.phpunit.de/en/10.5/assertions.html){target="_blank"}.
 
 ### Isoler un test
 

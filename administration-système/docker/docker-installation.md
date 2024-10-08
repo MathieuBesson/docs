@@ -1,5 +1,8 @@
 ---
 title: Docker installation
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Installation de Docker sur Ubuntu

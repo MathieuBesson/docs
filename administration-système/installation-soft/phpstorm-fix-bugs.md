@@ -1,5 +1,11 @@
 ---
 title: Résolution bug PhpStorm
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+links:
+  - title: "Bug officiel : `Process x is still running`"
+    url: https://youtrack.jetbrains.com/issue/IDEA-331715/Unable-to-start-Intellij-Exception-Process-4230-is-still-running-but-this-pid-does-no-exists
 ---
 
 # Résoudre les bugs de PhpStorm 
@@ -29,7 +35,3 @@ rm -f /home/{your-home}/.config/JetBrains/{your-PhpStormVersion}/.lock
 ```shell
 kill -9 $(pgrep -f phpstorm)
 ```
-
-## Liens utiles : 
-
--   [Bug officiel : `Process x is still running`](https://youtrack.jetbrains.com/issue/IDEA-331715/Unable-to-start-Intellij-Exception-Process-4230-is-still-running-but-this-pid-does-no-exists)

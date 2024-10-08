@@ -1,5 +1,8 @@
 ---
 title: Crypter transfère seveurs
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Crypter un transfert de fichier entre 2 serveurs 
@@ -33,8 +36,9 @@ ssh-copy-id {user-serveur-2}@{ip-serveur-2}
 ## Clé GPG
 
 Dans l'ordre des choses :
-    - Le serveur 1 qui va chiffrer le fichier à transférer avec la clé public du serveur 2
-    - Le serveur 2 qui va déchiffrer le fichier reçu avec sa clé privée
+
+- Le serveur 1 qui va chiffrer le fichier à transférer avec la clé public du serveur 2
+- Le serveur 2 qui va déchiffrer le fichier reçu avec sa clé privée
 
 Il est donc nécéssaire de créer une paire de clés sur le serveur 2 :
 ```shell

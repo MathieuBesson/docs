@@ -1,5 +1,8 @@
 ---
 title: Deban IP fail2ban
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Deban une IP de fail2ban

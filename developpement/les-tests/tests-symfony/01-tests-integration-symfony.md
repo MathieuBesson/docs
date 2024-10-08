@@ -1,5 +1,9 @@
 ---
 title: Tests d'intégration Symfony
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 25/09/2024
 ---
 
 # Tests d'intégration avec Symfony

@@ -1,5 +1,9 @@
 ---
 title: 02 - Open/Closed Principle
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # Open/Closed Principle (OCP), Ouvert/fermé

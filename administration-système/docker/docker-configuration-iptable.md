@@ -1,5 +1,8 @@
 ---
 title: Docker ports interdits
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Interdire à Docker d'utiliser des ports bannis par ufw ou iptable 
@@ -11,7 +14,8 @@ title: Docker ports interdits
 
 ## Solution 1 : Preciser un binding de port local
 
-```yaml title="docker-compose.yml"
+=== "docker-compose.yml"
+```yaml
 version: "3"
 
 services:
@@ -27,7 +31,9 @@ En utilisant `127.0.0.1:8000` on force docker à seulement éffectuer un binding
 ## Solution 2 : Ne pas autoriser docker à utiliser iptables
 
 Ajouter l'option suivante à la fin du fichier `/etc/default/docker`
-```shell title="/etc/default/docker"
+
+=== "/etc/default/docker"
+```shell
 DOCKER_OPTS="--iptables=false"
 ```
 

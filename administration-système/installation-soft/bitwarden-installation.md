@@ -1,5 +1,8 @@
 ---
 title: Installation Bitwarden Docker
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Installation de bitwarden avec Docker

@@ -1,5 +1,9 @@
 ---
 title: "01 - DRY, Don't Repeat Yourself"
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # DRY : Don't Repeat Yourself

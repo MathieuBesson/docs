@@ -1,5 +1,9 @@
 ---
 title: 04 - Interface Segregation Principle
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # Interface Segregation Principle (ISP), Ségrégation des interfaces

@@ -186,3 +186,19 @@ h5::before {
 }
 
 pre code { background-color: #272A35 !important; }
+
+.doc-meta {
+  font-size: 0.9em;  /* Taille de police réduite */
+  font-style: italic;
+  color: #6a6a6a;  /* Gris foncé */
+  margin-top: 5px;  /* Espacement entre le h1 et les métadonnées */
+  margin-bottom: 20px;  /* Espacement avec le contenu suivant */
+}
+
+.useful-links{
+  margin-top: 50px;
+}
+
+.useful-links .admonition-title{
+  font-size: 1.4em;
+}

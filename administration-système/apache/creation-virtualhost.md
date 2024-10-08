@@ -1,5 +1,8 @@
 ---
 title: Virtualhost apache
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Création d'un VirtualHost Apache
@@ -21,8 +24,8 @@ vi /etc/apache2/sites-available/{domain-name.fr}.conf
 
 Avec la configuration suivante : 
 
-
-```apacheconf title="/etc/apache2/sites-available/{domain-name.fr}.conf"
+=== "/etc/apache2/sites-available/{domain-name.fr}.conf"
+```apacheconf
 <VirtualHost *:80>
     # Le contact de l'admin
 	ServerAdmin contact@{domain-name.fr}

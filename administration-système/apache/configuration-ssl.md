@@ -1,5 +1,8 @@
 ---
 title: SSL Let's Encrypt Apache2
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Configuration SSL avec Apache2 et Let's Encrypt
@@ -41,7 +44,8 @@ certbot certonly --noninteractive --agree-tos --apache -d {domain.com}
 
 Mise en place de la conf SSL apache
 
-```apacheconf title="/etc/apache2/sites-available/{domain.com}.conf"
+=== "/etc/apache2/sites-available/{domain.com}.conf"
+```apacheconf
 <VirtualHost *:80>
         ServerName {domain-name.fr}
 

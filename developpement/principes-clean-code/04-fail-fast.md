@@ -1,5 +1,9 @@
 ---
 title: "04 - Fail Fast"
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # Principe Fail-Fast

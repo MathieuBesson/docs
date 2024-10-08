@@ -1,5 +1,13 @@
 ---
 title: Minimaliste CI/CD Github action
+author :
+  name : Mathieu BESSON
+  linkedin : mathieubesson
+links:
+  - title: SSH pour Github Actions
+    url: https://github.com/appleboy/ssh-action#setting-up-ssh-key
+  - title: Mise en place d'une CD pour une application nodejs avec Github Actions
+    url: https://gist.github.com/danielwetan/4f4db933531db5dd1af2e69ec8d54d8a
 ---
 
 # Mise en place d'une CD simple avec Github et Github Actions
@@ -33,7 +41,8 @@ sudo mkdir -p /var/www/projet && sudo chown -R github-action:github-action /var/
 
 Création d'un repository git avec un fichier yaml précisant les jobs à lancer à chaque push sur la branch main.
 
-```yaml title="./github/workflows/main.yml"
+=== "./github/workflows/main.yml"
+```yaml
 # Workflow actions
 name: Workflow CD
 
@@ -93,8 +102,3 @@ git clone git@github.com:user/projet.git .
 À partir de maintenant chaque push entrainera le déploiement du code sur le serveur
 
 Il est possible de retrouver les logs de chaque déploiement sur le repository dans l'onglet "Actions"
-
-## Liens utiles 
-
--   [SSH pour Github Actions](https://github.com/appleboy/ssh-action#setting-up-ssh-key)
--   [Mise en place d'une CD pour une application nodejs avec Github Actions](https://gist.github.com/danielwetan/4f4db933531db5dd1af2e69ec8d54d8a)

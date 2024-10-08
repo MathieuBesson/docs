@@ -1,5 +1,9 @@
 ---
 title: 03 - Liskov’s Substitution Principle
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # Liskov’s Substitution Principle (LSP), Substitution de Liskov

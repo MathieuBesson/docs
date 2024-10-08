@@ -1,5 +1,9 @@
 ---
 title: 01 - Single responsibility principle
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # Single responsibility principle (SRP), Principe de responsabilité unique

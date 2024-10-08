@@ -1,5 +1,8 @@
 ---
 title: Installation ZSH & OhMyZSH
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
 ---
 
 # Installation de ZSH et OhMyZSH sous Linux

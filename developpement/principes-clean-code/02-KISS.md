@@ -1,5 +1,9 @@
 ---
 title: "02 - KISS, Keep It Simple, Stupid" 
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 5/09/2024
 ---
 
 # KISS : Keep It Simple, Stupid

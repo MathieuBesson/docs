@@ -1,5 +1,13 @@
 ---
 title: Installation/config Ubuntu
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+links:
+  - title: SSH Github
+    url: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+  - title: OhMyZSH
+    url: https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/
 ---
 
 # Installation poste ubuntu2204 sous gnome
@@ -201,8 +209,3 @@ sudo apt-get -y install flameshot
 
 - Ajouter un gestionnaire de tilling + configuration
 - Raccourcis
-
-## Lien utiles
-
-- [SSH Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-- [OhMyZSH](https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/)

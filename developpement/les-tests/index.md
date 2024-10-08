@@ -1,5 +1,9 @@
 ---
 title: Introduction
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+publication_date: 10/09/2024
 ---
 
 # Les tests ? késako ? 

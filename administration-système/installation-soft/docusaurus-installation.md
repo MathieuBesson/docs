@@ -1,5 +1,11 @@
 ---
 title: Installation Docusaurus Docker
+author :
+    name : Mathieu BESSON
+    linkedin : mathieubesson
+links:
+  - title: Documentation d'installation officielle de Docusaurus
+    url: https://docusaurus.io/docs/installation
 ---
 
 # Installation de docusaurus avec Docker
@@ -76,7 +82,3 @@ Création d'un reverse proxy Apache sur {domain-name.fr} :
 Il est aussi important de configurer un certificat SSL sur {domain-name.fr} :
 
 -   [Documentation de création d'un certificat SSL avec Apache](../apache/configuration-ssl.md)
-
-## Liens utiles : 
-
--   [Installation de Docusaurus](https://docusaurus.io/docs/installation)
