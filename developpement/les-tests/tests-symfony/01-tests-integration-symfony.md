@@ -34,7 +34,7 @@ Dans cette optique, les tests d'intégration permettent de vérifier le bon font
 
 !!! info "Exemples avec Symfony et PHPUnit"
 
-    Les exemples suivants permettent de mettre en place des tests d'intégration dans une application Symfony à l'aide du framework de test PHPUnit. Les paragraphes suivants présentent donc les notions de base de ce framework de test.
+    Les exemples suivants permettent de mettre en place des tests d'intégration dans une application Symfony à l'aide du framework de test PHPUnit. Les paragraphes suivants présentent donc les notions de base de ce framework de test (dans le cadre des tests d'intégration).
 
 ### La classe `KernelTestCase`
 
@@ -196,6 +196,6 @@ L'objectif établi est ici atteint, ce test permettant de valider le bon fontion
 
 ## La suite ? 🚀
 
-**Comment valider une fonctionnalité entière : Les tests fonctionnelles**
+**Valider une fonctionnalité complète : Les tests fonctionnelles**
 
 À plus haut niveau, il est possible de tester et vérifier que des comportements ou fonctionnalités entières répondent correctement au besoin métier. Une doc est prévu à ce sujet sur l'implémentation des tests fonctionnelles dans une application Symfony. 🚀
