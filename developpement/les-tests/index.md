@@ -85,7 +85,7 @@ Les **tests fonctionnels** vérifient que les fonctionnalités d'une application
 
 #### Caractéristiques
 
-- **Objectif** : Les fonctionnalités testés de l'application correspondent aux pécifications fonctionnelles.
+- **Objectif** : Les fonctionnalités testés de l'application correspondent aux spécifications fonctionnelles.
 - **Portée** : Couvre des fonctionnalités complètes.
 - **Complexité** : Simples à concevoir si l'on se base sur les spécifications, mais peuvent devenir complexes en fonction de la fonctionnalité testée.
 
